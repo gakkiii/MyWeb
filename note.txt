@@ -1,0 +1,63 @@
+
+一:
+	初始化一个Git仓库，使用git init命令。
+
+	添加文件到Git仓库，分两步：
+
+	使用命令git add <file>，注意，可反复多次使用，添加多个文件；
+	使用命令git commit -m <message>，完成。
+	
+二:
+	git diff 文件名		---来查看更改的具体细节	------这个命令没用啊
+	git status			---查看还有那些文件更改了还没有提交
+	
+	要随时掌握工作区的状态，使用git status命令。
+	如果git status告诉你有文件被修改过，用git diff可以查看修改内容
+	
+三:
+	git log						---查看提交日志
+	git log --pretty=oneline	---查看提交日志(简化)
+	git reset --hard HEAD^		---回退count(^)个版本(如果多的话使用HEAD~n来表示)
+	git reset --hard 版本编号	---回退到指定版本
+	git reflog					---获取操作过程的日志(带版本编号)
+	
+	git reset HEAD 文件名		---把暂存区的(add后的)修改放回工作区(修改后add前)
+	git checkout -- 文件名		---把文件在工作区的修改全部撤销(回到上一次commit或add)
+	
+	git rm	文件名				---删除本地以及远程库的文件(一般还要commit一次)
+									必须使用git rm,不然commit不了
+	
+	git push origin master		---把本地的master分支的最新修改推送至github
+	git clone 地址				---从地址克隆一个项目
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
